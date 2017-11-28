@@ -37,6 +37,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Algorithm"
+            android:label="@string/title_activity_algorithm"></activity>
     </application>
 
 </manifest>

@@ -33,6 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_margin="4dp"
+                android:id="@+id/congestion"
                 android:background="@drawable/butttoncurved"
                 android:textColor="@android:color/white"
                 android:text="Congestion"/>
@@ -41,6 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_margin="4dp"
+                android:id="@+id/algorithm"
                 android:background="@drawable/butttoncurved"
                 android:textColor="@android:color/white"
                 android:text="Algorithm"/>

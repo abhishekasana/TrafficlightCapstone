@@ -1,8 +1,11 @@
 package com.sleepingteam.trafficlightcapstone;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -30,7 +33,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, items);
         dropdown.setAdapter(adapter);
 
-
+        Button process_algo = (Button) findViewById(R.id.algorithm);
+        process_algo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MapsActivity.this,Algorithm.class);
+                startActivity(intent);
+            }
+        });
         SeekBar seekBar = (SeekBar)findViewById(R.id.seekbar);
         final TextView seekbar_progress = (TextView)findViewById(R.id.seek_bar);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
