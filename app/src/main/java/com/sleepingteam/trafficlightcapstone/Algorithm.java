@@ -70,7 +70,7 @@ public class Algorithm extends FragmentActivity implements OnMapReadyCallback {
     }
 
     private void timer_calculation() {
-        //after some t1 seoonds set the change the color of the marker
+        //after some t1 seconds g change the color of the marker
         //change marker color
         marker1.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
 
