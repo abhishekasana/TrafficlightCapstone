@@ -1,0 +1,211 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        tools:context="com.sleepingteam.trafficlightcapstone.MapsActivity" />
+        <!--map:uiZoomGestures="false"-->
+        <!--map:uiRotateGestures="false"-->
+        <!--map:uiScrollGestures="false"-->
+        <!--map:uiTiltGestures="false"-->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/butttoncurved"
+                android:textColor="@android:color/white"
+                android:text="Congestion"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/butttoncurved"
+                android:textColor="@android:color/white"
+                android:text="Algorithm"/>
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/daytime_select">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/seek_bar"/>
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:max="10"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Values"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:text="T1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1" />
+                <EditText
+                    android:width="200px"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:width="200px"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:width="200px"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:width="200px"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:text="T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1" />
+                <EditText
+                    android:width="200px"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:width="200px"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:width="200px"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:width="200px"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:text="T3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1" />
+                <EditText
+                    android:width="200px"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:width="200px"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:width="200px"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:width="200px"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:text="T4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1" />
+                <EditText
+                    android:width="200px"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:width="200px"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:width="200px"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:width="200px"
+                    android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+        </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
